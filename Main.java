@@ -5,7 +5,6 @@ public class Main {
     static PrintWriter pr = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
 
     public static void main(String[] args) throws Exception {
-        int n = r.readInt();
         
     }
 
