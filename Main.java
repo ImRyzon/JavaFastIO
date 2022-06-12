@@ -1,20 +1,25 @@
 import java.io.*;
 import java.util.*;
 public class Main {
-    static FastIO r = new FastIO();
-    static PrintWriter pr = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
+    static FastReader r = new FastReader();
+    static BufferedWriter o = new BufferedWriter(new OutputStreamWriter(System.out));
 
-    public static void main(String[] args) throws Exception {
+    static void solve() {
         
     }
 
-    static class FastIO extends PrintWriter {
-        private InputStream stream;
-        private byte[] buf = new byte[1 << 16];
+    public static void main(String[] args) throws Exception {
+        int testCases = 1;
+        for (int i = 0; i < testCases; i++) solve();
+    }
+
+    static class FastReader extends PrintWriter {
+        private final InputStream stream;
+        private final byte[] buf = new byte[1 << 16];
         private int curChar, numChars;
-        public FastIO() {this(System.in, System.out);}
-        public FastIO(InputStream i, OutputStream o) {super(o);stream = i;}
-        public FastIO(String i, String o) throws IOException {
+        public FastReader() {this(System.in, System.out);}
+        public FastReader(InputStream i, OutputStream o) {super(o);stream = i;}
+        public FastReader(String i, String o) throws IOException {
             super(new FileWriter(o)); stream = new FileInputStream(i);
         }
         private int readByte() {
