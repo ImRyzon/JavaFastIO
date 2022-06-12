@@ -9,8 +9,8 @@ public class Main {
     }
 
     public static void main(String[] args) throws Exception {
-        int testCases = 1;
-        for (int i = 0; i < testCases; i++) solve();
+        int TEST_CASES = 1;
+        while (TEST_CASES --> 0) solve();
     }
 
     static class FastReader extends PrintWriter {
