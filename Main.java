@@ -4,7 +4,7 @@ public class Main {
     static FastReader r = new FastReader();
     static BufferedWriter o = new BufferedWriter(new OutputStreamWriter(System.out));
 
-    static void solve() {
+    static void solve() throws Exception {
         
     }
 
