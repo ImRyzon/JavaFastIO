@@ -1,8 +1,9 @@
 import java.io.*;
 import java.util.*;
 public class Main {
-    static FastReader r = new FastReader();
+    static FastReader FastReader = new FastReader();
     static BufferedWriter o = new BufferedWriter(new OutputStreamWriter(System.out));
+    static PrintWriter pw;
 
     static void solve() throws Exception {
         
@@ -12,6 +13,28 @@ public class Main {
         int TEST_CASES = 1;
         while (TEST_CASES --> 0) solve();
     }
+
+    static class Pair {
+        int first, second;
+        public Pair(int first, int second) {this.first = first; this.second = second;}
+    }
+
+    private static class Edge implements Comparable <Edge> {
+        int v, w;
+        public Edge(int v, int w) {this.v = v; this.w = w;}
+        public int compareTo(Edge e) {return w - e.w;}
+    }
+
+    static void setPrintWriter() throws Exception {
+        // For Debugging Purposes
+        pw = new PrintWriter(new BufferedWriter(new FileWriter("Notepad.txt", true)));
+    }
+
+    static int readInt() {return FastReader.readInt();}
+    static double readDouble() {return FastReader.readDouble();}
+    static long readLong() {return FastReader.readLong();}
+    static String readLine() {return FastReader.readLine();}
+    static String next() {return FastReader.next();}
 
     static class FastReader extends PrintWriter {
         private final InputStream stream;
