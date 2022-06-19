@@ -6,7 +6,7 @@ public class Main {
     static PrintWriter pw;
 
     static void solve() throws Exception {
-        
+
     }
 
     public static void main(String[] args) throws Exception {
@@ -31,10 +31,12 @@ public class Main {
     }
 
     static int readInt() {return FastReader.readInt();}
-    static double readDouble() {return FastReader.readDouble();}
     static long readLong() {return FastReader.readLong();}
+    static double readDouble() {return FastReader.readDouble();}
+    static float readFloat() {return FastReader.readFloat();}
     static String readLine() {return FastReader.readLine();}
     static String next() {return FastReader.next();}
+    static boolean readBool() {return FastReader.readBool();}
 
     static class FastReader extends PrintWriter {
         private final InputStream stream;
@@ -79,6 +81,8 @@ public class Main {
         }
         public double readDouble() {return Double.parseDouble(next());}
         public long readLong() {return Long.parseLong(next());}
+        public float readFloat() {return Float.parseFloat(next());}
+        public boolean readBool() {return Boolean.parseBoolean(next());}
         boolean isEndLine(int c) {return c == '\n' || c == '\r' || c == -1;}
     }
 }
