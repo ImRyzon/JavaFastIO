@@ -10,8 +10,9 @@ public class Main {
     }
 
     public static void main(String[] args) throws Exception {
-        int TEST_CASES = 1;
-        while (TEST_CASES --> 0) solve();
+        int TEST_CASES = 5;
+        for (int i = 1; i <= TEST_CASES; i++) solve();
+        exit();
     }
 
     static class Pair {
@@ -28,6 +29,11 @@ public class Main {
     static void setPrintWriter() throws Exception {
         // For Debugging Purposes
         pw = new PrintWriter(new BufferedWriter(new FileWriter("Notepad.txt", true)));
+    }
+
+    static void exit() throws Exception {
+        o.close();
+        System.exit(0);
     }
 
     static int readInt() {return FastReader.readInt();}
