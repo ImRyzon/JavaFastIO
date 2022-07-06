@@ -10,7 +10,7 @@ public class Main {
     }
 
     public static void main(String[] args) throws Exception {
-        int TEST_CASES = 5;
+        int TEST_CASES = 1;
         for (int i = 1; i <= TEST_CASES; i++) solve();
         exit();
     }
