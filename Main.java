@@ -1,8 +1,5 @@
 import java.io.*;
 import java.util.*;
-import java.math.*;
-import java.text.*;
-import java.time.*;
 public class Main {
     static FastReader FastReader = new FastReader();
     static BufferedWriter o = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -21,6 +18,12 @@ public class Main {
     static class Pair {
         int first, second;
         public Pair(int first, int second) {this.first = first; this.second = second;}
+    }
+
+    static class Tuple implements Comparable <Tuple> {
+        int first, second, third;
+        Tuple(int f, int s, int t) {first = f; second = s; third = t;}
+        public int compareTo(Tuple x) { return Integer.compare(second, x.second); }
     }
 
     private static class Edge implements Comparable <Edge> {
